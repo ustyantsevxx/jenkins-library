@@ -1,4 +1,4 @@
-def sendMessage(message) {
+def call(message) {
     def encodedMessage = URLEncoder.encode(message, "UTF-8")
 
     withCredentials([string(credentialsId: 'telegramBotToken', variable: 'TOKEN'),
